@@ -1,145 +1,244 @@
 .herosect
-  background: url(../images/dist/mainpage/hero_bg.png) center, linear-gradient(99.7deg, #6C5D87 4.29%, #A78BD6 31.58%, #9680BB 70.6%) center
-  background-repeat: no-repeat
-  min-height: 640px
-  display: flex
-  align-items: center
-  color: #fff
-  background-color: #6C5D87
-  position: relative
-  z-index: -1
-  &__title
-    font-size: 40px
-    font-weight: 400
-    line-height: 44px
-    margin-bottom: 32px
+	background: url(../images/dist/mainpage/hero_bg.png) center, linear-gradient(99.7deg, #6C5D87 4.29%, #A78BD6 31.58%, #9680BB 70.6%) center
+	background-repeat: no-repeat
+	min-height: 640px
+	display: flex
+	align-items: center
+	color: #fff
+	background-color: #6C5D87
+	position: relative
+	z-index: -1
+	&__title
+		font-size: 40px
+		font-weight: 400
+		line-height: 44px
+		margin-bottom: 32px
 
-  &-advatages
-    display: flex
-    &__item
-      padding-left: 24px
-      padding-right: 24px
-      border-right: 2px solid $gray
-      color: $gray
-      &:first-child
-        padding-left: 0
-      &:last-child
-        padding-right: 0
-        border: none
+	&-advantages
+		display: flex
+		&__item
+			padding-left: 24px
+			padding-right: 24px
+			border-right: 2px solid $gray
+			color: $gray
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+				border: none
 
-  &__down
-    width: 80px
-    height: 80px
-    border: 1px solid #8473B3
-    border-radius: 16px
-    position: absolute
-    bottom: 40px
-    cursor: pointer
-    background-image: url('../images/dist/mainpage/main_arrow_down.svg')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 17px
-    transition: .3s border-color
-    &:hover
-      border-color: #fff
+	&__down
+		width: 80px
+		height: 80px
+		border: 1px solid #8473B3
+		border-radius: 16px
+		position: absolute
+		bottom: 40px
+		cursor: pointer
+		background-image: url('../images/dist/mainpage/main_arrow_down.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 17px
+		transition: .3s border-color
+		&:hover
+			border-color: #fff
 
 .aboutsect
-  &__img
-    margin-top: -165px
-    margin-left: 90px
-    position: relative
-    &::after
-      position: absolute
-      content: ''
-      width: 532px
-      height: 513px
-      background: #40296D
-      filter: blur(300px)
-      bottom: 18px
-      left: 50%
-      margin-left: -266px
-      z-index: -1
+	&__img
+		margin-top: -165px
+		margin-left: 90px
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			width: 532px
+			height: 513px
+			background: #40296D
+			filter: blur(300px)
+			bottom: 18px
+			left: 50%
+			margin-left: -266px
+			z-index: -1
 
-      
-  &__uptitle
-    font-size: 24px
-    color: $gray
-    opacity: .5
-    font-weight: 400
-    line-height: 28px
-    margin-top: 80px
-    margin-bottom: 24px
-  &__title
-    color: #fff
-    font-size: 40px
-    line-height: 44px
-    font-weight: 400
+			
+	&__uptitle
+		font-size: 24px
+		color: $gray
+		opacity: .5
+		font-weight: 400
+		line-height: 28px
+		margin-top: 80px
+		margin-bottom: 24px
+	&__title
+		color: #fff
+		font-size: 40px
+		line-height: 44px
+		font-weight: 400
 
 
 .advsect
-  &__title
-    margin-bottom: 40px
-  &-advantages
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    &__item
-      max-width: 285px
-      margin-bottom: 65px
-      h3
-        margin-bottom: 28px
-  &__more
-    font-weight: 600
-    border-bottom: 1px solid #5E5568
-    color: #fff
-    text-decoration: none
-    &:hover
-      color: #fff
+	&__title
+		margin-bottom: 40px
+	&-advantages
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			max-width: 285px
+			margin-bottom: 65px
+			h3
+				margin-bottom: 28px
+			p
+				margin-bottom: 0px
+	&__more
+		font-weight: 600
+		border-bottom: 1px solid #5E5568
+		color: #fff
+		text-decoration: none
+		&:hover
+			color: #fff
 
 .solsect
-  &-item
-    &__wrapper
-      margin-top: 120px
-    &__img
-      margin-bottom: 30px
-    &__title
-      margin-bottom: 15px
-    &-links
-      display: flex
-      margin: 0
-      padding: 0
-      list-style-type: none
-      &__item
-        &::after
-          content: ''
-          width: 4px
-          height: 4px
-          background: #5E5568
-          margin-right: 12px
-          margin-left: 12px
-          display: inline-block
-        &:last-child
-          &::after
-            display: none
-        a
-          color: #fff
-          text-decoration: none
-          border-bottom: 1px solid #E5E5E5
-          font-weight: 600
-        
-  &-form
-    border: 1px solid #5E5568
-    padding: 40px 50px
-    &__title
-      margin-bottom: 25px
-    &__policy
-      font-size: 12px
-      line-height: 12px
-      text-align: center
-      color: #B8B3C1
-      a
-        transition: .3s color
-        color: #8473B2
-        text-decoration: none
-        &:hover
-          color: #fff
+	&-item
+		&__wrapper
+			margin-top: 120px
+		&__img
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 15px
+		&-links
+			display: flex
+			flex-wrap: wrap
+			margin: 0
+			padding: 0
+			list-style-type: none
+			&__item
+				&::after
+					content: ''
+					width: 4px
+					height: 4px
+					background: #5E5568
+					margin-right: 12px
+					margin-left: 12px
+					display: inline-block
+				&:last-child
+					&::after
+						display: none
+				a
+					color: #fff
+					text-decoration: none
+					border-bottom: 1px solid #E5E5E5
+					font-weight: 600
+				
+	&-form
+		border: 1px solid #5E5568
+		padding: 40px 50px
+		&__title
+			margin-bottom: 25px
+		&__policy
+			font-size: 12px
+			line-height: 12px
+			text-align: center
+			color: #B8B3C1
+			a
+				transition: .3s color
+				color: #8473B2
+				text-decoration: none
+				&:hover
+					color: #fff
+
+
+@media (max-width: 1399.98px)
+	.solsect-item-links
+		flex-direction: column
+		&__item
+			&::after
+				display: none
+
+@media (max-width: 991.98px)
+	.herosect
+		&__title
+			font-size: 28px
+			line-height: 36px
+		&__down
+			display: none
+		&-advantages__item
+			font-size: 12px
+			padding-left: 10px
+			padding-right: 10px
+	
+	.advsect
+		&-advantages__item
+			max-width: calc(50% - 10px)
+
+	.solsect
+		&-form
+			padding-left: 25px
+			padding-right: 25px
+
+@media (max-width: 767.98px)
+	.herosect
+		background: url(../images/dist/mainpage/hero_bg_mobile.png) center top, $purple
+		background-repeat: no-repeat
+		align-items: flex-start
+		padding-top: 350px
+		padding-bottom: 65px
+		min-height: auto
+		&-advantages__item
+			color: #fff
+
+	.aboutsect
+		&__img
+			margin-top: -100px
+			margin-left: auto
+			margin-right: auto
+		&__uptitle
+			margin-top: 24px	
+			margin-bottom: 15px
+			text-align: center
+			font-size: 20px
+			line-height: 28px
+		&__title
+			font-size: 28px
+			text-align: center
+			line-height: 36px
+			margin-bottom: 0
+
+	.advsect
+		&__img
+			&_mobile
+				display: block
+				margin-top: -180px
+				margin-bottom: -100px
+				margin-left: auto
+				margin-right: auto
+		&-advantages__item 
+			max-width: 100%
+			margin-bottom: 30px
+			h3
+				margin-bottom: 12px
+		&__more
+			text-align: center
+			display: block
+			max-width: 220px
+			margin-left: auto
+			margin-right: auto
+	
+	.solsect
+		&-item
+			margin-bottom: 60px
+			&-links
+				flex-direction: row
+				flex-wrap: wrap
+				&__item
+					font-size: 12px
+					&::after
+						display: inline-block
+						margin-left: 8px
+						margin-right: 8px
+			&__wrapper
+				margin-top: 0
+				&_form
+					order: 1
+		&-form
+			padding: 30px 20px

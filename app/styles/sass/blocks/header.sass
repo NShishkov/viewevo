@@ -1,37 +1,98 @@
 .header
-  background-color: transparent
-  position: fixed
-  width: 100%
-  top: 0
-  left: 0
-  padding-top: 32px
-  padding-bottom: 32px
-  font-weight: 600
-  font-size: 14px
-  z-index: 100
-  transition: .3s
-  &.fixed
-    background-color: $mainBg
-  &-menu
-    display: flex
-    list-style-type: none
-    padding: 0
-    margin: 0
-    li
-      margin-right: 35px
-      &:last-child
-        margin-right: 0
-      a
-        color: #fff
-        text-decoration: none
-        &:hover
-          color: $yellow
-    &__wrapper
-      display: flex
-      justify-content: space-between
-        
-  &__lang
-    color:#fff
-    text-decoration: none
-    &:hover
-      color: #fff
+	background-color: transparent
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	padding-top: 32px
+	padding-bottom: 32px
+	font-weight: 600
+	font-size: 14px
+	z-index: 100
+	transition: .3s
+	&.fixed
+		background-color: $darkLight
+	&-menu
+		display: flex
+		list-style-type: none
+		padding: 0
+		margin: 0
+		&__title
+			display: none
+		li
+			margin-right: 35px
+			&:last-child
+				margin-right: 0
+			a
+				color: #fff
+				text-decoration: none
+				&:hover
+					color: $yellow
+		&__wrapper
+			display: flex
+			justify-content: space-between
+		&__mobile
+			display: none
+				
+	&__lang
+		color:#fff
+		text-decoration: none
+		line-height: 24px
+		&:hover
+			color: #fff
+
+@media (max-width: 991.98px)
+	body
+		padding-top: 54px
+
+	.header
+		padding-top: 16px
+		padding-bottom: 16px
+		background-color: $darkLight
+		max-height: 56px
+
+		&-menu
+			flex-direction: column
+			font-size: 18px
+			li
+				margin-right: 0
+				padding: 20px 0px	
+				border-bottom: 1px solid $gray
+				&:last-child
+					border: none
+			&__title
+				font-size: 28px
+				line-height: 36px
+				font-family: $secfont
+				font-weight: 400
+				margin-bottom: 65px
+				display: block
+			&__wrapper
+				justify-content: flex-end
+				nav
+					display: none
+				&.open
+					nav
+						display: flex
+						flex-direction: column
+						position: fixed
+						top: 56px
+						left: 0
+						width: 100%
+						padding: 40px 25px
+						background-color: $mainBg
+						height: calc(100vh - 56px)
+						overflow: auto
+			&__mobile
+				display: block
+				margin-left: 15px
+				img
+					&:nth-child(2)
+						display: none
+				&.open
+					img
+						&:nth-child(1)
+							display: none
+						&:nth-child(2)
+							display: block
+						

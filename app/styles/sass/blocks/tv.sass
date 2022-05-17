@@ -1,0 +1,36 @@
+.tophead
+	&_tv
+		background-image: url(../images/dist/tv/tophead.jpg)
+
+.num.howsect
+	&__ol
+		margin-left: 75px 
+
+.modelsect
+	&__text
+		margin-top: 32px
+		max-width: 480px
+
+.connectsect
+	&__text
+		margin-top: 30px
+		margin-left: 65px
+
+@media (max-width: 991.98px)
+	.num.howsect__ol
+		margin-bottom: -20px
+	.num.howsect__ol,.connectsect__text
+		margin-left: 0
+
+	.modelsect__text,.connectsect__text
+		margin-top: 0
+		margin-bottom: -24px
+
+@media (max-width: 767.98px)
+	.howsect__img,.modelsect__img,.connectsect__img
+		margin-bottom: 24px
+
+@media (max-width: 567.98px)
+	.connectsect
+		&__btn
+			width: 100%

@@ -27,3 +27,44 @@
 			left: 0
 			top: 0
 			z-index: -1
+
+.about	
+	&-form
+		&__title
+			margin-bottom: 40px
+		&__policy
+			margin-bottom: 0
+			font-size: 12px
+			line-height: 12px
+			margin-left: 20px	
+		input[type='button']
+			margin-bottom: 0
+
+
+@media (max-width: 991.98px)
+	.aboutsection
+		&__title
+			br
+				display: none
+
+	.about	
+		&-form
+			textarea
+				min-height: 192px
+			&__policy
+				br
+					display: none
+
+@media (max-width: 767.98px)
+	.aboutsection 
+		padding-top: 40px
+		&__img
+			margin-bottom: 40px
+	.about	
+		&-form
+			input[type='button']
+				margin-bottom: 16px
+			&__policy
+				margin-left: 0
+				text-align: center
+			

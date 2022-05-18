@@ -16,10 +16,17 @@ $(function(){
 		$('.header-menu__wrapper').toggleClass('open');
 	});
 
+	$('.herosect__down').click(function(){
+		$('html, body').animate({
+			scrollTop: $(".aboutsect").offset().top-$('.header').height()  // класс объекта к которому приезжаем
+		}, 400); 
+	})
+
 	$('.footer__title').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass('open');
 	});
+
 
 });
 

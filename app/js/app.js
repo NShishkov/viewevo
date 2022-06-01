@@ -2,6 +2,10 @@
 // import '~/app/libs/mmenu/dist/mmenu.js'
 
 $(function(){
+	
+	if ($(window).scrollTop() > 80)
+		$('.header').addClass('fixed');
+
 	$(window).scroll(function(){
 		if (this.scrollY > 80){
 			$('.header').addClass('fixed');

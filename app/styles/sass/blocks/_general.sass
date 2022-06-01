@@ -7,6 +7,10 @@
 	padding-top: 120px
 .pb-120
 	padding-bottom: 120px
+.pt-160
+	padding-top: 160px
+.pb-160
+	padding-bottom: 160px
 
 section.bg_light
 	position: relative
@@ -31,6 +35,20 @@ h2
 	line-height: 40px
 	font-weight: 400
 	margin-bottom: 40px
+	&.fade
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			width: 380px
+			height: 380px
+			background: #40296D
+			filter: blur(300px)
+			bottom: 18px
+			left: 0
+			top: 50%
+			margin-top: -190px
+			z-index: -1
 
 h3
 	font-family: $secfont
@@ -173,6 +191,10 @@ textarea
 		padding-top: 80px
 	.pb-120
 		padding-bottom: 80px
+	.pt-160
+		padding-top: 100px
+	.pb-160
+		padding-bottom: 100px
 
 	input[type='text'],input[type='email']
 		height: 48px
